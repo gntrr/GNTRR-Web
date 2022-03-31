@@ -1,12 +1,12 @@
 /* this one contains all the body style */
 .container {
   width: 90%;
-  max-width: 640px;
+  max-width: 812px;
   margin: 0 auto;
+  position: relative;
 }
 
 #main {
-  transition: margin-left 0.5s ease;
   padding-top: 100px;
   overflow: hidden;
   width: 100%;
@@ -30,7 +30,7 @@
   text-decoration: none;
   padding: 3px 12px;
   margin: 14px 16px;
-  background: black;
+  background: #22303c;
   color: #fff;
   border-radius: 20px;
 }
@@ -44,13 +44,21 @@ body {
   background-image: url("../img/bg.svg");
 }
 
+/* this one to wrap all embedded content */
+.wrap-box {
+  overflow: hidden;
+  padding: 20px;
+  background: #15202b;
+  border-radius: 10px;
+}
+
 /* this contains all the embedded content property */
 .responsive-youtube {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .responsive-youtube iframe {
   left: 0;
@@ -126,7 +134,7 @@ body {
   top: 0;
   left: 0;
   background-color: #111;
-  opacity: 90%;
+  opacity: 95%;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s ease;
@@ -138,7 +146,7 @@ body {
   font-size: 22px;
   color: #ccccccd4;
   display: block;
-  transition: 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .side-nav a:hover {
