@@ -26,6 +26,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
+
+    <!-- plyr.css -->
+    <link rel="stylesheet" href="./styles/plyr.css" />
   </head>
   <body>
     <!-- main body -->
@@ -165,6 +168,27 @@
               pandemi.
             </p>
           </div>
+          <br />
+          <div class="wrap-box">
+            <div class="plyr-wrap">
+              <!-- content here -->
+              <video
+                id="player"
+                crossorigin
+                playsinline
+                data-poster="./content/GoaResi.jpg"
+                controls
+              >
+                <source src="./content/GoaResi.mp4" type="video/mp4"/
+                size="1080">
+              </video>
+            </div>
+            <p>
+              Di penghujung bulan Maret, aku sekeluarga pergi "healing" ke Gua
+              Resi yang berada di Kecamatan Bulukerto, Kabupaten Wonogiri, Jawa
+              Tengah. Video ini juga dapat kalian lihat di akun IG ku lhoo...
+            </p>
+          </div>
           <p class="interest">
             Masih ingin lihat lebih banyak? pergi ke media sosial aku di bawah
             ini untuk melihatnya.
@@ -222,5 +246,7 @@
         document.getElementById("main").style.marginLeft = "0px";
       }
     </script>
+    <!-- plyr framework -->
+    <script src="./content/js/plyr.js" crossorigin="anonymous"></script>
   </body>
 </html>

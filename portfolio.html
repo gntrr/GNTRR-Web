@@ -26,6 +26,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
+
+    <!-- plyr.css -->
+    <link rel="stylesheet" href="./styles/plyr.css" />
   </head>
   <body>
     <!-- main body -->
@@ -162,6 +165,19 @@
               videos from 2017-2020. Of course before there was a pandemic.
             </p>
           </div>
+          <br>
+          <div class="wrap-box">
+            <div class="plyr-wrap">
+              <!-- content here -->
+                <video id="player" crossorigin playsinline data-poster="./content/GoaResi.jpg" controls >
+                  <source src="./content/GoaResi.mp4" type="video/mp4"/ size="1080">
+                </video>
+              </div>
+              <p>
+                At the end of March, my family and I went "healing" to Gua Resi, which is located in Bulukerto District, Wonogiri Regency, Central Java. You can see this video on my IG account too...
+              </p>
+            </div>
+          </div>
           <p class="interest">
             Still want to see more? just go to my social media below to see
             them.
@@ -219,5 +235,7 @@
         document.getElementById("main").style.marginLeft = "0px";
       }
     </script>
+    <!-- plyr framework -->
+    <script src="./content/js/plyr.js" crossorigin="anonymous"></script>
   </body>
 </html>
